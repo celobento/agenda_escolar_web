@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141218000336) do
+ActiveRecord::Schema.define(version: 20141218002427) do
+
+  create_table "planos", force: true do |t|
+    t.string   "nome"
+    t.integer  "horaDiaUtil"
+    t.integer  "horaDiaFds"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "usuarios", force: true do |t|
     t.string   "nome"

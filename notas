@@ -1,0 +1,33 @@
+#comandos
+
+1 - git
+	// envia servidor
+	git push -u origin master 
+
+	// verifica o que foi ou nao commitado
+	git status
+
+	//commita
+	git commit -a -m "classes usuario e plano"
+
+	// associa arquivos ao git
+	git add .
+
+2 - ruby
+	// gerar classe
+	rails generate scaffold Plano nome:string horaDiaUtil:int horaDiaFds:int
+
+	// subir o servidor
+	rails s
+
+	//gerar pagina estatica
+	rails generate controller StaticPages home help
+
+	// apaga paginas estaticas
+	rails destroy  controller StaticPages home help
+
+	// gerar models
+	rails generate model User name:string email:string
+
+	// apagar model
+	rails destroy model User
